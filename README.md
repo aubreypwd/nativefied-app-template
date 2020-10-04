@@ -13,7 +13,7 @@ Navigate over to the [releases](https://github.com/aubreypwd/{app-slug}/releases
 ```bash
 brew tap aubreypwd/homebrew-cask
 brew update
-brew install {app-slug}
+brew cask install {app-slug}
 ```
 
 # Development
