@@ -27,7 +27,7 @@ brew upgrade {SLUG}
 
 Or download the `.dmg` in [releases](https://github.com/aubreypwd/{SLUG}-mac/releases/latest) and install per usual.
 
-_Note, you will have to Right-click on the {APPNAME} to open for the first time._
+*_Note, you will have to Right-click on the {APPNAME} to open for the first time._*
 
 ---
 
