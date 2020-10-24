@@ -6,15 +6,30 @@ An (unofficial) native MacOS App for {APPNAME}.
 
 # Install
 
-Navigate over to the [releases](https://github.com/aubreypwd/{app-slug}/releases) and download the latest version, or install via:
-
 ## Homebrew Cask
+
+### Install
 
 ```bash
 brew tap aubreypwd/homebrew-cask
 brew update
-brew cask install {app-slug}
+brew cask install {SLUG}
 ```
+
+### Upgrade
+
+```
+brew update
+brew upgrade {SLUG}
+```
+
+## Download
+
+Or download the `.dmg` in [releases](https://github.com/aubreypwd/{SLUG}-mac/releases/latest) and install per usual.
+
+_Note, you will have to Right-click on the {APPNAME} to open for the first time._
+
+---
 
 # Development
 

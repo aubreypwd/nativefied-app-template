@@ -8,7 +8,7 @@
     "installsupport": "echo 'Run: [brew install graphicsmagick imagemagick] for additional DMG support.'",
     "postinstall": "npm run installsupport",
     "build": "npm run nativefier",
-    "nativefier": "./node_modules/.bin/nativefier --name '{APPNAME}' --platform 'Mac' --min-width 1265 --min-height 1024 --width 1265 --height 1024 --flash --verbose --darwin-dark-mode-support --icon ./icon.png --internal-urls '.*(facebook|google)*.' '{URL}' ./build",
+    "nativefier": "./node_modules/.bin/nativefier --name '{APPNAME}' --platform 'Mac' --min-width {WIDTH} --min-height {HEIGHT} --width {WIDTH} --height {HEIGHT} --flash --verbose --darwin-dark-mode-support --icon ./icon.png '{URL}' ./build",
     "dist": "npm run build && mkdir -p dist/ && ./node_modules/.bin/create-dmg './build/{APPNAME}-darwin-x64/{APPNAME}.app' --overwrite --dmg-title='{APPNAME}' --identity='Aubrey Portwood' ./dist/ || true && mv './dist/{APPNAME} 1.0.0.dmg' \"./dist/{APPNAME} $npm_package_version.dmg\""
   },
   "author": "Aubrey Portwood",
